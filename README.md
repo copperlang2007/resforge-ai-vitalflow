@@ -3,41 +3,29 @@
 **Autonomous AI Employee for VitalFlow Health**  
 *Free resources, grants, pilots, and GTM execution — all handled 24/7.*
 
-## What is Alex?
+## Setup Instructions (Important!)
 
-Alex is your full-time AI co-founder built specifically for healthtech startups in Texas. It procures every free resource, tracks every grant deadline, runs customer discovery, manages pilot protocols, and prepares CPRIT SEED applications — so you can focus on building VitalFlow.
+### 1. Add Environment Variables in Vercel
+Go to your Vercel project settings → Environment Variables and add:
 
-## Key Features
+- `GROK_API_KEY` = Your real xAI Grok API key
+- `SUPABASE_URL` = Your Supabase project URL
+- `SUPABASE_ANON_KEY` = Your Supabase anon/public key
 
-- **Procurement Engine** — Automatically claims and organizes 12,000+ free resources (cloud credits, legal templates, design kits, dev tools)
-- **Grant Intelligence** — Tracks Texas Health, HHSC, CPRIT, NIH SBIR, and 200+ other opportunities with auto-generated applications
-- **Oncology Pilot System** — Complete protocol, statistical analysis plan, power calculations, and North Texas clinic outreach
-- **CPRIT SEED Ready** — Full pre-application package ($3M request) including budget justification and oncology metrics
-- **24/7 Execution** — "Talk to Alex" natural language interface that actually completes tasks
+### 2. How to Get Keys
+- **Grok API Key**: https://console.x.ai/
+- **Supabase** (Free tier): https://supabase.com → New Project → Settings → API
 
-## Live Demo
+The app will automatically switch from demo mode to real mode when these are set.
 
-Open `index.html` in any browser. The entire app is a single self-contained file.
+## Deployment
+This repo is connected to Vercel. Every push to `main` triggers automatic deployment.
 
-## Tech Stack
+## Features
+- Real Grok-powered AI assistant
+- Supabase persistence for claimed resources and grant tracking
+- Security hardened (CSP, input sanitization)
+- HIPAA notice included
 
-- Pure HTML + Tailwind CSS + Vanilla JS (zero dependencies)
-- Designed for instant deployment on Vercel, Netlify, or GitHub Pages
-- Fully responsive and accessible
-
-## How to Deploy
-
-1. Push this folder to GitHub
-2. Connect the repo to Vercel or Netlify
-3. Done — your AI employee is live
-
-## License
-
-MIT — Use freely for any healthtech or startup project.
-
----
-
-Built by Grok for Michael @ VitalFlow Health (Melissa, TX)  
+Built for Michael @ VitalFlow Health (Melissa, TX)  
 May 2026
-
-*This app was curated and perfected from 40+ turns of real conversation about free resources for Texas healthtech startups.*
